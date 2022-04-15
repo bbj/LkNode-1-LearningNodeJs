@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "demo3": "nodemon ",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,6 +18,9 @@
   },
   "homepage": "https://github.com/bbj/LkNode-1-LearningNodeJs#readme",
   "dependencies": {
-    "lodash": "^4.17.21"
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
