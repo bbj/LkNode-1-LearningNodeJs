@@ -1,12 +1,12 @@
-var express = require('express')
-var bodyParser = require('body-parser')
-var app = express()
+const express = require('express')
+const bodyParser = require('body-parser')
+const app = express()
 
 app.use(express.static(__dirname))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 
-var messages = [
+const messages = [
   { name: 'Tim', message: 'Hi' },
   { name: 'Jane', message: 'Hello' }
 ]
@@ -20,6 +20,6 @@ app.post('/message', (req, res) => {
   res.sendStatus(200)
 })
 
-var server = app.listen(3000, () => {
+const server = app.listen(3000, () => {
   console.log('server is listening on port', server.address().port)
 })
